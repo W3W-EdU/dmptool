@@ -9,7 +9,7 @@ ruby '>= 3.0'
 # ===========#
 
 # Full-stack web application framework. (http://rubyonrails.org)
-gem 'rails', '~> 6.1'
+gem 'rails', '~> 7.1', '>= 7.1.0'
 
 # TODO: Remove this once Rails addresses the issue with its dependency on mimemagic. Mimemagic had
 #       an MIT license but was using some incompatible GPL license code.
@@ -22,19 +22,19 @@ gem 'puma', group: :puma, require: false
 
 # Use esbuild, rollup.js, or Webpack to bundle your JavaScript, then deliver it via the asset pipeline in Rails
 # Read more: https://github.com/rails/jsbundling-rails
-gem 'jsbundling-rails'
+gem 'jsbundling-rails', '>= 1.3.1'
 
 # Use Tailwind CSS, Bootstrap, Bulma, PostCSS, or Dart Sass to bundle and process your CSS
 # Read more: https://github.com/rails/cssbundling-rails
-gem 'cssbundling-rails'
+gem 'cssbundling-rails', '>= 1.4.1'
 
 # Turbo gives you the speed of a single-page web application without having to write any JavaScript..
 # Read more: https://github.com/hotwired/turbo-rails
 #            https://github.com/hotwired/turbo-rails/blob/main/UPGRADING.md
-gem 'turbo-rails'
+gem 'turbo-rails', '>= 2.0.6'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder'
+gem 'jbuilder', '>= 2.13.0'
 
 # Use Redis adapter to run Action Cable in production
 # gem "redis", "~> 4.0"
@@ -105,7 +105,7 @@ gem 'devise'
 
 # A generalized Rack framework for multiple-provider authentication.
 # (https://github.com/omniauth/omniauth)
-gem 'omniauth'
+gem 'omniauth', '>= 2.1.3'
 
 # OmniAuth Shibboleth strategies for OmniAuth 1.x
 # https://github.com/toyokazu/omniauth-shibboleth
@@ -124,7 +124,7 @@ gem 'omniauth-rails_csrf_protection'
 
 # Doorkeeper is a gem (Rails engine) that makes it easy to introduce OAuth 2 provider functionality
 # to your Ruby on Rails or Grape application. https://github.com/doorkeeper-gem/doorkeeper
-gem 'doorkeeper'
+gem 'doorkeeper', '>= 5.8.0'
 
 # A ruby implementation of the RFC 7519 OAuth JSON Web Token (JWT) standard.
 # https://github.com/jwt/ruby-jwt
@@ -155,12 +155,12 @@ gem 'recaptcha'
 
 # Ideal gem for handling attachments in Rails, Sinatra and Rack applications.
 # (http://github.com/markevans/dragonfly)
-gem 'dragonfly'
+gem 'dragonfly', '>= 1.4.1'
 
 # Really Simple Syndication (RSS) is a family of formats that describe feeds, specially
 # constructed XML documents that allow an interested person to subscribe and receive updates
 # from a particular web service (https://github.com/ruby/rss)
-gem 'rss'
+gem 'rss', '>= 0.3.1'
 
 group :aws do
   # Amazon AWS S3 data store for use with the Dragonfly gem.
@@ -224,7 +224,7 @@ gem 'parallel'
 gem 'httparty'
 
 # Autoload dotenv in Rails. (https://github.com/bkeepers/dotenv)
-gem 'dotenv-rails'
+gem 'dotenv-rails', '>= 3.1.3'
 
 # A library that retrieves an citation for the specified DOI.
 # https://github.com/CDLUC3/uc3-citation
@@ -253,11 +253,11 @@ end
 
 group :test do
   # RSpec for Rails (https://github.com/rspec/rspec-rails)
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 6.1.4'
 
   # factory_bot_rails provides integration between factory_bot and rails 3
   # or newer (http://github.com/thoughtbot/factory_bot_rails)
-  gem 'factory_bot_rails'
+  gem 'factory_bot_rails', '>= 6.4.4'
 
   # Easily generate fake data (https://github.com/stympy/faker)
   gem 'faker'
@@ -267,7 +267,7 @@ group :test do
   gem 'fuubar'
 
   # Guard keeps an eye on your file modifications (https://github.com/guard/guard)
-  gem 'guard'
+  gem 'guard', '>= 2.19.0'
 
   # Guard gem for RSpec (https://github.com/guard/guard-rspec)
   # gem 'guard-rspec'
@@ -278,7 +278,7 @@ group :test do
 
   # Library for stubbing HTTP requests in Ruby.
   # (http://github.com/bblimke/webmock)
-  gem 'webmock'
+  gem 'webmock', '>= 3.24.0'
 
   # Strategies for cleaning databases.  Can be used to ensure a clean state
   # for testing. (http://github.com/DatabaseCleaner/database_cleaner)
@@ -309,7 +309,7 @@ group :test do
   gem 'rails-controller-testing'
 
   # automating code review
-  gem 'danger'
+  gem 'danger', '>= 9.5.0'
 end
 
 group :ci, :development do
@@ -336,7 +336,7 @@ group :ci, :development do
 
   # Automatic Rails code style checking tool. A RuboCop extension focused on enforcing
   # Rails best practices and coding conventions.
-  gem 'rubocop-rails'
+  gem 'rubocop-rails', '>= 2.26.0'
 
   # A RuboCop plugin for Rake tasks
   # gem 'rubocop-rake'
@@ -374,7 +374,7 @@ group :development do
 
   # TODO: Unlock this version once the Rails load error is fixed:
   #       https://github.com/BetterErrors/better_errors/issues/523
-  gem 'better_errors', '2.9.1'
+  gem 'better_errors', '2.10.0'
 
   # Retrieve the binding of a method's caller. Can also retrieve bindings
   # even further up the stack. (http://github.com/banister/binding_of_caller)
@@ -385,7 +385,7 @@ group :development do
   gem 'spring-commands-rspec'
 
   # Profiles loading speed for rack applications. (http://miniprofiler.com)
-  gem 'rack-mini-profiler'
+  gem 'rack-mini-profiler', '>= 4.0.0'
 
   # Annotates Rails Models, routes, fixtures, and others based on the
   # database schema. (http://github.com/ctran/annotate_models)
