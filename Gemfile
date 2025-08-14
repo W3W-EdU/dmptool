@@ -9,7 +9,7 @@ ruby '>= 3.0'
 # ===========#
 
 # Full-stack web application framework. (http://rubyonrails.org)
-gem 'rails', '~> 6.1'
+gem 'rails', '~> 7.1', '>= 7.1.5.2'
 
 # TODO: Remove this once Rails addresses the issue with its dependency on mimemagic. Mimemagic had
 #       an MIT license but was using some incompatible GPL license code.
@@ -231,7 +231,7 @@ gem 'dotenv-rails'
 gem 'uc3-citation'
 
 # Makes it easy to validate JSON attributes against a JSON schema.
-gem 'activerecord_json_validator'
+gem 'activerecord_json_validator', '>= 3.1.0'
 
 # Filename sanitization for Ruby. This is useful when you generate filenames for downloads from
 # user input (we're using it for PDF invoice downloads in Noko). (https://github.com/madrobby/zaru)
@@ -282,7 +282,7 @@ group :test do
 
   # Strategies for cleaning databases.  Can be used to ensure a clean state
   # for testing. (http://github.com/DatabaseCleaner/database_cleaner)
-  gem 'database_cleaner', require: false
+  gem 'database_cleaner', '>= 2.1.0', require: false
 
   # Making tests easy on the fingers and eyes
   # (https://github.com/thoughtbot/shoulda)
