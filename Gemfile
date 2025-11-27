@@ -120,7 +120,7 @@ gem 'omniauth-orcid'
 # application) by implementing a CSRF token verifier that directly uses
 # ActionController::RequestForgeryProtection code from Rails.
 #   https://nvd.nist.gov/vuln/detail/CVE-2015-9284
-gem 'omniauth-rails_csrf_protection'
+gem 'omniauth-rails_csrf_protection', '>= 2.0.0'
 
 # Doorkeeper is a gem (Rails engine) that makes it easy to introduce OAuth 2 provider functionality
 # to your Ruby on Rails or Grape application. https://github.com/doorkeeper-gem/doorkeeper
