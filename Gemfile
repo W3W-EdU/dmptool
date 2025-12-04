@@ -321,7 +321,7 @@ group :ci, :development do
 
   # Helper gem to require bundler-audit
   # (http://github.com/stewartmckee/bundle-audit)
-  gem 'bundle-audit'
+  gem 'bundle-audit', '>= 0.2.0'
 
   # RuboCop is a Ruby code style checking and code formatting tool. It aims to enforce
   # the community-driven Ruby Style Guide.
