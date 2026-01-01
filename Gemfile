@@ -221,7 +221,7 @@ gem 'translation'
 gem 'parallel'
 
 # Makes http fun again! Wrapper to simplify the native Net::HTTP libraries
-gem 'httparty'
+gem 'httparty', '>= 0.24.0'
 
 # Autoload dotenv in Rails. (https://github.com/bkeepers/dotenv)
 gem 'dotenv-rails'
