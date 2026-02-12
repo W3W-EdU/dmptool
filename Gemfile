@@ -309,7 +309,7 @@ group :test do
   gem 'rails-controller-testing'
 
   # automating code review
-  gem 'danger'
+  gem 'danger', '>= 9.5.0'
 end
 
 group :ci, :development do
